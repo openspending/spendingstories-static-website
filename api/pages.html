@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="robots" content="NONE,NOARCHIVE">
+        
+
+        <title>Spending Stories</title>    
+            <link rel="stylesheet" type="text/css" href="./api_pages_files/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="./api_pages_files/bootstrap-tweaks.css">
+        
+        <link rel="stylesheet" type="text/css" href="./api_pages_files/prettify.css">
+        <link rel="stylesheet" type="text/css" href="./api_pages_files/default.css">
+        
+
+    
+    </head>
+
+  <body class="container vsc-initialized">
+
+    <div class="wrapper">
+
+    
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <span href="/">
+                    <a class="brand" href="./">OKF - Spending Stories <span class="date" style="font-size:0.6em">summer 2013</span></a>
+                </span>
+                <ul class="nav pull-right">
+                    
+                        
+                            <li><a href="#">Log in</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <ul class="breadcrumb">
+        
+            <li>
+                <a href="./index.html">Api Root</a> <span class="divider">›</span>
+            </li>
+        
+            <li>
+                <a href="./pages.html" class="active">Pages List</a> 
+            </li>
+        
+    </ul>
+    
+
+    <!-- Content -->
+    <div id="content">        <form id="get-form" class="pull-right">
+                <fieldset>
+                    <div class="btn-group format-selection">
+                        <a class="btn btn-primary js-tooltip" href="#" rel="nofollow" data-original-title="Make a GET request on the Pages List resource">GET</a>
+
+                        <button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" data-original-title="Specify a format for the GET request">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            
+                                <li>
+                                    <a class="js-tooltip format-option" href="#" rel="nofollow" data-original-title="Make a GET request on the Pages List resource with the format set to `json`">json</a>
+                                </li>
+                            
+                                <li>
+                                    <a class="js-tooltip format-option" href="#" rel="nofollow" data-original-title="Make a GET request on the Pages List resource with the format set to `api`">api</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+
+                </fieldset>
+            </form>
+                <form class="button-form" action="#">
+                <input type="hidden" name="#" value="#">
+                <input type="hidden" name="_method" value="OPTIONS">
+                <button class="btn btn-primary js-tooltip" data-original-title="Make an OPTIONS request on the Pages List resource">OPTIONS</button>
+            </form>
+        
+
+        
+
+        <div class="content-main">
+            <div class="page-header"><h1>Pages List</h1></div>
+            
+            <div class="request-info" style="clear: both">
+                <pre class="prettyprint"><b><span class="pln">GET</span></b><span class="pln"> </span><span class="pun">/</span><span class="pln">api</span><span class="pun">/</span><span class="pln">pages</span><span class="pun">/</span></pre>
+            </div>
+            <div class="response-info">
+                <pre class="prettyprint"><div class="meta nocode"><b>HTTP 200 OK</b>
+<b>Allow:</b> <span class="lit">GET, HEAD, OPTIONS</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+<b>Content-Type:</b> <span class="lit">text/html; charset=utf-8</span>
+
+</div><span class="pun">[</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"title"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"About"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"slug"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"about"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"content"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&lt;hr /&gt;&lt;b&gt;&lt;span style=\"text-decoration: underline;\"&gt;What is the project?&lt;/span&gt;&lt;/b&gt;\r\n&lt;p&gt;&lt;span style=\"line-height: 1.5em;\"&gt;Spending Stories is a project by the Open Knowledge Foundation aiming at improving fiscal literacy and providing greater awareness of budget data worldwide. &lt;/span&gt;&lt;a href=\"http://blog.okfn.org/category/okf-projects/spending-stories/\" target=\"_self\"&gt;Read more about it on this blog&lt;/a&gt;&lt;span style=\"line-height: 1.5em;\"&gt;. It is supported by &lt;/span&gt;&lt;a href=\"http://www.knightfoundation.org/grants/20110941/\" target=\"_self\"&gt;a grant by the Knight Foundation&lt;/a&gt;&lt;span style=\"line-height: 1.5em;\"&gt;.&lt;br&gt;\r\n&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;span style=\"line-height: 1.5em;\"&gt;This part of the Spending Stories project enables users to put amounts into perspective. Any amount in any currency can be queried and compared against real-life expenditures. The results take into account inflation in the country where the expenditure has been realized.&lt;/span&gt;&lt;/p&gt;\r\n&lt;p&gt;&lt;span style=\"line-height: 1.5em;\"&gt;The project is open source and can be installed on your own server for you to insert your own spending stories. &lt;/span&gt;&lt;a href=\"https://github.com/jplusplus/okf-spending-stories\" target=\"_self\"&gt;Find more instructions at Github&lt;/a&gt;&lt;span style=\"line-height: 1.5em;\"&gt;.&lt;br&gt;\r\n\r\n&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;b&gt;&lt;span style=\"text-decoration: underline;\"&gt;Who is the team?&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;a href=\"http://okfn.org/\" target=\"_blank\"&gt;The Open Knowledge foundation&lt;/a&gt; asked Paris and Berlin-based agency &lt;a href=\"http://paris.jplusplus.org\" target=\"_self\"&gt;Journalism++ SAS&lt;/a&gt;&amp;nbsp;  to build this app. It was managed by &lt;a href=\"https://twitter.com/annelisebouyer\" target=\"_self\"&gt;@annelisebouyer&lt;/a&gt;  and coded by &lt;a href=\"https://twitter.com/toutenrab\" target=\"_self\"&gt;@toutenrab&lt;/a&gt;, &lt;a href=\"https://twitter.com/vied12\" target=\"_self\"&gt;@vied12&lt;/a&gt;, &lt;a href=\"https://twitter.com/paulloz\" target=\"_self\"&gt;@paulloz&lt;/a&gt;  and &lt;a href=\"https://twitter.com/pirhoo\" </span><a href="mailto:target=\%22_self\%22%3E@pirhoo%3C/a%3E.%3Cbr%3E\r\n\r\n%3C/p%3E\r\n"><span class="str">target=\"_self\"&gt;@pirhoo&lt;/a&gt;.&lt;br&gt;\r\n\r\n&lt;/p&gt;\r\n</span></a><span class="str">"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"title"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Frequently Asked Questions"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"slug"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"faq"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"content"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&lt;p dir=\"ltr\" id=\"docs-internal-guid-25d39fc1-5e08-5e47-2ebc-6985e9325347\"&gt;&lt;b&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;Why did you build this?&lt;/span&gt;&lt;/b&gt;\r\n&lt;/p&gt;\r\n&lt;p dir=\"ltr\"&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;News stories are full of amounts. \u201cHuge costs\u201d can promote a story from the front page or relegate it to a corner on page 19. &lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;In the OpenSpending project, facilitated by The Open Knowledge Foundation, we wanted to create a tool to help citizens and journalists to compare and make sense the costs floating in the space. With Spending Stories we wish to make it easier to compare amount and for you to add your own.&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;b&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;What is a top story?&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;Spending Stories categorizes its stories by their relative impact and the likelihood that the amounts of money they feature will resonate with the user. \u201cTop stories\u201d are widely read stories from major newspapers and tabloids, whereas \u201cother stories\u201d are less well known.&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;b&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;How does the cards visualization choose stories for a given amount?&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;Whereas the scale visualization shows how an amount fits into the whole landscape of amounts in the Spending Stories database, the cards visualization picks out stories featuring amounts that are intuitively comparable to the amount (e.g. twice or half as much is \u201ccomparable\u201d while 1/256 is not).&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;b&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;Where does the data for Spending Stories come from?&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;The data comes from various places. For the initial data we have mostly focussed on finding spending stories in news articles and tabloids since these are stories people know of, but we also get data from &lt;a href=\"http://openspending.org\" target=\"_blank\"&gt;OpenSpending&lt;/a&gt;&lt;/span&gt;&lt;span style=\"text-decoration:none;\"&gt;&lt;span style=\"color:#1155cc;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;. Now the data comes from you or other people like you, who contribute stories via the contribution wizard.&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;If you\u2019re interested in a particular story you can see where it came from by clicking on the &lt;i&gt;Source&lt;/i&gt; button. That will take you to the original news article or place where the data is available. We require all contributors to identify the source of the spending story.&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;b&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;How do I embed a story?&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;Stories can be embedded using the &lt;i&gt;Share&lt;/i&gt; button which appears on both the scale and cards visualizations. Pressing this button reveals a snippet of HTML which can be pasted into a website to embed the story.&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;b&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;How do I add my own spending story?&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;To start contributing a new story to the database, press the &lt;i&gt;Contribute&lt;/i&gt; button, located to the right of the &lt;i&gt;Compare&lt;/i&gt; button at the top of the interface. This will take you to the story contribution wizard, which will present you with steps you can follow to add a new story.&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;b&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;Is it open source?&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;Yes! The &lt;a href=\"https://github.com/jplusplus/okf-spending-stories\" target=\"_blank\"&gt;source code for Spending Stories&lt;/a&gt;  is hosted on GitHub. We hope the community will help build on the project by adding new features and fixing bugs.&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;b&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;Can I create my own site with the Spending Stories code?&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;Please do! We would love to see new Spending Stories sites springing up, particularly if they deal with currencies and geographical areas not covered in the original release.&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;If enough users create localized instances of Spending Stories, exciting interactions between the sites will become possible (e.g. comparing amounts across different countries).&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;b&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;Can I create it in my own language?&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;Yes! Besides Spending Stories instances with new countries and currencies, we\u2019re hoping to see the community translate Spending Stories into new languages.&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;b&gt;&lt;span color=\"\" style=\"background-color: rgb(255, 255, 255); font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;\"&gt;How do I contribute to the code?&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;span style=\"background-color: rgb(255, 255, 255); font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;\"&gt;&lt;/span&gt;&lt;p dir=\"ltr\"&gt;&lt;span style=\"background-color: rgb(255, 255, 255); font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;\"&gt;Visit the &lt;a href=\"https://github.com/jplusplus/okf-spending-stories\" target=\"_blank\"&gt;Spending Stories GitHub repo&lt;/a&gt; &lt;/span&gt;&lt;span style=\"color:#000000;background-color:transparent;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt; and create a fork of the code. If you make changes that you think should become part of the main branch, &lt;a href=\"https://help.github.com/articles/using-pull-requests\" target=\"_blank\"&gt;create a pull request&lt;/a&gt; .&lt;/span&gt;&lt;span style=\"color:#404040;background-color:#ffffff;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;\"&gt;&lt;/span&gt;&lt;/p&gt;\r\n"</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">]</span></pre>
+            </div>
+        </div>
+
+            
+
+                
+
+                
+            
+
+        </div>
+        <!-- END content-main -->
+
+    </div>
+    <!-- END Content -->
+
+        <div id="push"></div>
+
+    
+
+    <!-- ./wrapper -->
+
+    
+    <!--<div id="footer">
+        <a class="powered-by" href='http://django-rest-framework.org'>Django REST framework</a>
+    </div>-->
+    
+
+    
+    <script src="./api_pages_files/jquery-1.8.1-min.js"></script>
+    <script src="./api_pages_files/bootstrap.min.js"></script>
+    <script src="./api_pages_files/prettify-min.js"></script>
+    <script src="./api_pages_files/default.js"></script>
+    
+  
+
+</body></html>

@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="robots" content="NONE,NOARCHIVE">
+        
+
+        <title>Spending Stories</title>    
+            <link rel="stylesheet" type="text/css" href="./api_currencies_files/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="./api_currencies_files/bootstrap-tweaks.css">
+        
+        <link rel="stylesheet" type="text/css" href="./api_currencies_files/prettify.css">
+        <link rel="stylesheet" type="text/css" href="./api_currencies_files/default.css">
+        
+
+    
+    </head>
+
+  <body class="container vsc-initialized">
+
+    <div class="wrapper">
+
+    
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <span href="/">
+                    <a class="brand" href="./">OKF - Spending Stories <span class="date" style="font-size:0.6em">summer 2013</span></a>
+                </span>
+                <ul class="nav pull-right">
+                    
+                        
+                            <li><a href="#">Log in</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <ul class="breadcrumb">
+        
+            <li>
+                <a href="./index.html">Api Root</a> <span class="divider">›</span>
+            </li>
+        
+            <li>
+                <a href="./currencies.html" class="active">Currency List</a> 
+            </li>
+        
+    </ul>
+    
+
+    <!-- Content -->
+    <div id="content">        <form id="get-form" class="pull-right">
+                <fieldset>
+                    <div class="btn-group format-selection">
+                        <a class="btn btn-primary js-tooltip" href="#" rel="nofollow" data-original-title="Make a GET request on the Currency List resource">GET</a>
+
+                        <button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" data-original-title="Specify a format for the GET request">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            
+                                <li>
+                                    <a class="js-tooltip format-option" href="#" rel="nofollow" data-original-title="Make a GET request on the Currency List resource with the format set to `json`">json</a>
+                                </li>
+                            
+                                <li>
+                                    <a class="js-tooltip format-option" href="#" rel="nofollow" data-original-title="Make a GET request on the Currency List resource with the format set to `api`">api</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+
+                </fieldset>
+            </form>
+                <form class="button-form" action="#">
+                <input type="hidden" name="#" value="#">
+                <input type="hidden" name="_method" value="OPTIONS">
+                <button class="btn btn-primary js-tooltip" data-original-title="Make an OPTIONS request on the Currency List resource">OPTIONS</button>
+            </form>
+        
+
+        
+
+        <div class="content-main">
+            <div class="page-header"><h1>Currency List</h1></div>
+            <p>API endpoint that allows Currency to be viewed or edited.</p>
+            <div class="request-info" style="clear: both">
+                <pre class="prettyprint"><b><span class="pln">GET</span></b><span class="pln"> </span><span class="pun">/</span><span class="pln">api</span><span class="pun">/</span><span class="pln">currencies</span><span class="pun">/</span></pre>
+            </div>
+            <div class="response-info">
+                <pre class="prettyprint"><div class="meta nocode"><b>HTTP 200 OK</b>
+<b>Allow:</b> <span class="lit">GET, HEAD, OPTIONS</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+<b>Content-Type:</b> <span class="lit">text/html; charset=utf-8</span>
+
+</div><span class="pun">[</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GBP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"British pound"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.754867</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\u00a3"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"EUR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"EU euro"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.842774</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\u20ac"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"JPY"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Japanese yen"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">103.818</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\u00a5"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"USD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"US dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.0</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"$"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AUD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Australian dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.375989</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"$"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CAD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Canadian dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.308865</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"$"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"HKD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Hong Kong SAR dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7.752705</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"$"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"INR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Indian rupee"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">74.1031</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\u20b9"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MXN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mexican peso"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">20.25185</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"$"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NZD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"New Zealand dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.448253</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"$"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NOK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Norwegian krone"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">9.018229</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"kr"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SGD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Singapore dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.34555</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"$"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KRW"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"South Korean won"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1114.27</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\u20a9"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SEK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Swedish krona"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">8.608465</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"kr"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CHF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Swiss franc"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.9111</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CHF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AFN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Afghanistan afghani"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">77.034952</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ALL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Albanian lek"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">104.549884</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DZD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Algerian dinar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">128.500452</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\u062f\u062c"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AOA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Angolan kwanza"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">663.82</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ARS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Argentine peso"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">80.2793</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"$"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AMD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Armenian dram"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">481.616228</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AWG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Aruban guilder"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.8</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AZN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Azerbaijanian new manat"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.7025</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BSD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bahamian dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.0</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BHD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bahraini dinar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.37708</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BDT"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bangladeshi taka"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">84.746047</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BBD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Barbados dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2.0</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BYR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Belarusian ruble"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">20026.25</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BZD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Belize dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2.014389</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BMD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bermudian dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.0</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BTN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bhutan ngultrum"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">64.390172</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BTC"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bitcoin"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.000586735667</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BOB"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bolivian boliviano"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">6.965474</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BWP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Botswana pula"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10.571883</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BRL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Brazilian real"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3.1905</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"R$"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BND"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Brunei dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.410883</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BGN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bulgarian lev"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.79701</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BIF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Burundi franc"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1697.226149</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KHR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Cambodian riel"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">4070.666667</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CVE"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Cape Verde escudo"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">101.75</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KYD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Cayman Islands dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.835262</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"XOF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CFA franc BCEAO"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">601.331466</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"XAF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CFA franc BEAC"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">602.13538</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"XPF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CFP franc"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">110.194477</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CLP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Chilean peso"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">678.5</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"$"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CNY"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Chinese yuan renminbi"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">6.90805</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\u00a5"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"COP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Colombian peso"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2978.5</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"$"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KMF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Comoros franc"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">452.95</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CDF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Congolese franc"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1408.730159</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CRC"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Costa Rican colon"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">562.081597</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"HRK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Croatian kuna"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">6.812551</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CUP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Cuban peso"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">25.5</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CZK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Czech koruna"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">24.4611</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"K\u010d"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DKK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Danish krone"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">6.835626</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"kr"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DJF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Djibouti franc"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">178.92</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DOP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Dominican peso"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">47.362024</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"XCD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"East Caribbean dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2.70255</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"EGP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Egyptian pound"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">18.101</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\u00a3"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SVC"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"El Salvador colon"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">8.770172</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"EEK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Estonian kroon"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">14.573008</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ETB"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Ethiopian birr"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22.898386</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FKP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Falkland Islands pound"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.801467</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FJD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Fiji dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2.080353</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GMD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Gambian dalasi"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">45.25</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GEL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Georgian lari"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2.44052</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GHS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Ghanaian new cedi"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">4.354004</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GIP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Gibraltar pound"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.801467</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"XAU"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Gold (ounce)"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.00080412</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GTQ"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Guatemalan quetzal"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7.374733</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GNF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Guinean franc"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">9376.7</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GYD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Guyana dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">209.167653</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"HTG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Haitian gourde"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">69.140727</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"HNL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Honduran lempira"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">23.457083</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"HUF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Hungarian forint"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">289.0175</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ISK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Icelandic krona"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">113.03</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"XDR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"IMF special drawing right"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.73534</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"IDR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Indonesian rupiah"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">13314.859733</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Rp"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"IRR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Iranian rial"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">32433.221397</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"IQD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Iraqi dinar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1172.117965</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ILS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Israeli new shekel"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3.63185</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\u20aa"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"JMD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Jamaican dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">129.555417</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"JOD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Jordanian dinar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.709904</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KZT"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Kazakh tenge"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">316.941057</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KES"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Kenyan shilling"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">103.0</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KWD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Kuwaiti dinar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.304709</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KGS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Kyrgyz som"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">68.583501</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LAK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Lao kip"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">8251.5</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LVL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Latvian lats"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.654582</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LBP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Lebanese pound"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1514.85</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LSL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Lesotho loti"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">12.940762</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LRD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Liberian dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">94.497383</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LYD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Libyan dinar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.414712</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LTL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Lithuanian litas"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3.215858</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MOP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Macao SAR pataca"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">8.003649</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MKD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Macedonian denar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">57.627</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MGA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Malagasy ariary"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3258.859946</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MWK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Malawi kwacha"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">729.77795</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MYR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Malaysian ringgit"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">4.4215</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"RM"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MVR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Maldivian rufiyaa"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">15.490106</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MRO"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mauritanian ouguiya"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">360.076451</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MUR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mauritius rupee"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">35.3175</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MDL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Moldovan leu"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">19.440213</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MNT"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mongolian tugrik"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2447.704608</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MAD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Moroccan dirham"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10.0385</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MZN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mozambique new metical"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">68.498026</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MMK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Myanmar kyat"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1370.16006</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NAD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Namibian dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">12.940762</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NPR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Nepalese rupee"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">104.458799</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ANG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Netherlands Antillian guilder"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.779647</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NIO"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Nicaraguan cordoba oro"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">29.584926</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NGN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Nigerian naira"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">308.725626</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KPW"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"North Korean won"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">900.09</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"OMR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Omani rial"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.38502</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PKR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Pakistani rupee"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">105.364942</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PAB"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Panamanian balboa"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.0</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PGK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Papua New Guinea kina"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3.199906</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PYG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Paraguayan guarani"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">5718.954248</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PEN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Peruvian nuevo sol"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3.243338</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PHP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Philippine peso"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50.2</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PLN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Polish zloty"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3.94054</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"z\u0142"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"QAR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Qatari rial"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3.64135</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"RON"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Romanian new leu"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">4.251989</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"RUB"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Russian ruble"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">56.0193</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\u0440\u0443\u0431"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"RWF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Rwandan franc"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">844.017094</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SHP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Saint Helena pound"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.801467</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"WST"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Samoan tala"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2.553449</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"STD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Sao Tome and Principe dobra"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22810.152631</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SAR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Saudi riyal"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3.7502</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\ufdfc"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"RSD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Serbian dinar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">115.897505</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SCR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Seychelles rupee"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">13.482</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SLL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Sierra Leone leone"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7477.659488</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"XAG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Silver (ounce)"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.05517699</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SBD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Solomon Islands dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7.778822</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SOS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Somali shilling"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">581.765</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ZAR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"South African rand"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">13.455504</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"R"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LKR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Sri Lanka rupee"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">152.95265</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SDG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Sudanese pound"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">6.683714</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SRD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Suriname dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7.55</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SZL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Swaziland lilangeni"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">13.013853</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SYP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Syrian pound"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">214.346667</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TWD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Taiwan New dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">30.313</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NT$"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TJS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Tajik somoni"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">8.328097</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TZS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Tanzanian shilling"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2223.320158</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"THB"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Thai baht"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">34.4875</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\u0e3f"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TOP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Tongan pa'anga"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2.292709</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TTD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Trinidad and Tobago dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">6.767228</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TND"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Tunisian dinar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2.278595</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TRY"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Turkish lira"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3.655308</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\\u20BA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TMT"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Turkmen new manat"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3.50998</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AED"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"UAE dirham"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3.673014</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"UGX"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Uganda new shilling"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3637.566138</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"UAH"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Ukrainian hryvnia"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">27.168213</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"UYU"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Uruguayan peso uruguayo"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">28.67424</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"UZS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Uzbekistani sum"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3646.65</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"VUV"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Vanuatu vatu"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">108.664814</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"VEF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Venezuelan bolivar fuerte"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">9.985022</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bs"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"VND"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Vietnamese dong"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22775.468</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\u20ab"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"YER"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Yemeni rial"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">250.281642</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ZMK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Zambian kwacha"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">5253.075255</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ZWL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Zimbabwe dollar"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"rate"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">322.322775</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"symbol"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&amp;#36;"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"priority"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">]</span></pre>
+            </div>
+        </div>
+
+            
+
+                
+
+                
+            
+
+        </div>
+        <!-- END content-main -->
+
+    </div>
+    <!-- END Content -->
+
+        <div id="push"></div>
+
+    
+
+    <!-- ./wrapper -->
+
+    
+    <!--<div id="footer">
+        <a class="powered-by" href='http://django-rest-framework.org'>Django REST framework</a>
+    </div>-->
+    
+
+    
+    <script src="./api_currencies_files/jquery-1.8.1-min.js"></script>
+    <script src="./api_currencies_files/bootstrap.min.js"></script>
+    <script src="./api_currencies_files/prettify-min.js"></script>
+    <script src="./api_currencies_files/default.js"></script>
+    
+  
+
+</body></html>

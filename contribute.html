@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html  xmlns:ng="http://angularjs.org" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title class="ng-binding">Contribute / Step 1 - Spending Stories</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link href="./contribute_files/css" rel="stylesheet" type="text/css">
+        
+    <link rel="stylesheet" href="./contribute_files/2a0c7adf117e.css" type="text/css" media="all">
+
+    </head>
+    <body class="vsc-initialized" >
+        
+    <header style="top: 0px;">
+	<div class="container">
+		<h1>
+			<a translate="" class="ng-scope" href="./">Spending Stories</a>
+			<i>
+				<span class="ng-binding">
+					by <a href="http://okfn.org/" target="_blank" translate="" class="ng-scope">The Open Knowledge Foundation</a>
+				</span>
+			</i>
+		</h1>
+
+		<ul class="list-inline links pull-right">
+			<li>
+				<a href="./contribute.html">
+					<i class="icon-edit"></i>
+					<span translate="" class="ng-scope">Contribute</span>
+				</a>
+			</li>
+		</ul>
+
+		<form autocomplete="off" name="searchform" class="form-horizontal ng-valid ng-valid-required ng-dirty" role="form">
+			<div class="input-group">
+				<input type="text" class="form-control ng-scope ng-valid ng-valid-required ng-dirty"  placeholder="How much is it really?" name="query"><ul class="typeahead dropdown-menu"  matches="matches" active="activeIdx" select="select(activeIdx)" query="query" position="position" style="display: none; top: 39px; left: 0px;">
+    
+</ul>
+				<div class="input-group-btn relative">
+					<input type="submit" class="btn btn-primary" value="Compare">
+				</div>
+			</div>
+			<span class="help-block">
+				<span translate="" class="ng-scope">Example queries:</span>
+				<a href="#" translate="" class="ng-scope">12 million British pounds</a>,
+				<a href="#" translate="" class="ng-scope">5,000 US dollars</a>,
+				<a href="#" translate="" class="ng-scope">300,000 EU euros</a>
+			</span>
+		</form>
+
+	</div>
+
+
+</header>
+
+    <div id="content" class="container"><form class="contribute panel panel-default ng-scope ng-pristine ng-invalid ng-invalid-required"  role="form" name="contribForm">
+
+	<div class="panel-heading">
+		<h2 translate="" class="ng-scope">Contribute</h2>
+
+		<p translate="" class="ng-scope">If you have a spending or budget data point that you can contribute, please give some basic information here.</p>
+		<p></p>
+	</div>
+
+	<div class="row list-unstyled text-center steps-nav" ng-hide="isDone()">
+		<li class="col-xs-4 ng-binding" ng-class="{ disabled: step != 0 }">
+			<strong class="ng-binding">Step 1</strong><br>What is the amount in your story?
+		</li>
+		<li class="col-xs-4 ng-binding disabled" ng-class="{ disabled: step != 1 }">
+			<strong class="ng-binding">Step 2</strong><br>What is your story about? 
+		</li>
+		<li class="col-xs-4 ng-binding disabled" ng-class="{ disabled: step != 2 }">
+			<strong class="ng-binding">Step 3</strong><br>Describe your story
+		</li>
+	</div>
+
+
+	<div class="panel-footer" ng-hide="isDone()">
+		<div class="row top10">
+			<div class="col-xs-6 col-sm-3 text-left">
+				<button type="button" class="btn btn-default ng-binding" ng-show="step &gt; 0 &amp;&amp; step &lt; stepCount" ng-click="step = step - 1" style="display: none;">
+					Previous
+				</button>
+			</div>
+			<div class="hidden-xs col-sm-6">
+				<div class="progress top05">
+	 				<div class="progress-bar" role="progressbar" ng-style="progressStyle()" style="width: 0%;"></div>
+	 			</div>
+			</div>
+			<div class="col-xs-6 col-sm-3 text-right">
+				<button type="button" class="btn btn-primary ng-binding" ng-disabled="!getForm().$valid" ng-show="step &lt; stepCount-1" ng-click="step = step + 1" disabled="disabled">
+					Continue
+				</button>
+				<button type="submit" class="btn btn-primary ng-scope" ng-disabled="!contribForm.$valid" ng-show="step == stepCount-1" translate="" disabled="disabled" style="display: none;">Submit</button>
+			</div>
+		</div>
+	</div>
+
+</form>
+</div>
+    <footer>
+        <div class="container">        
+            <div class="row">
+                <div class="col-sm-1 col-md-2">
+                    
+                    <div class="col links">
+                        <a href="./about.html" class="ng-binding">About</a>
+                    </div>
+                </div>
+                <div class="col-sm-offset-2 col-sm-3 col-md-3 col-md-offset-1 col">
+                    <a href="http://knightfoundation.org/" target="_blank">
+                        <img src="./contribute_files/knight-logo.png">
+                    </a>
+                </div>
+                <div class="col-sm-3 col-md-3 col">
+                    <a href="https://okfn.org/" target="_blank">
+                        <img src="./contribute_files/okfn-logo.png">
+                    </a>
+                </div>
+                <div class="col-sm-3 col-md-3 col">                    
+                    <a href="http://jplusplus.org/" target="_blank">
+                        <img src="./contribute_files/jpp-logo.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body></html>

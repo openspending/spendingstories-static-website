@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+        
+        
+        <meta name="robots" content="NONE,NOARCHIVE">
+        
+
+        <title>Spending Stories</title>
+
+        
+        
+            <link rel="stylesheet" type="text/css" href="./1_files/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="./1_files/bootstrap-tweaks.css">
+        
+        <link rel="stylesheet" type="text/css" href="./1_files/prettify.css">
+        <link rel="stylesheet" type="text/css" href="./1_files/default.css">
+        
+
+    
+    </head>
+
+  <body class="container vsc-initialized">
+
+    <div class="wrapper">
+
+    
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <span href="/">
+                    <a class="brand" href="#">OKF - Spending Stories <span class="date" style="font-size:0.6em">summer 2013</span></a>
+                </span>
+                <ul class="nav pull-right">
+                    
+                        
+                            <li><a href="#">Log in</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <ul class="breadcrumb">
+        
+            <li>
+                <a href="#">Api Root</a> <span class="divider">›</span>
+            </li>
+        
+            <li>
+                <a href="#">Pages List</a> <span class="divider">›</span>
+            </li>
+        
+            <li>
+                <a href="#" class="active">Pages Instance</a> 
+            </li>
+        
+    </ul>
+    
+
+    <!-- Content -->
+    <div id="content">
+
+        
+            <form id="get-form" class="pull-right">
+                <fieldset>
+                    <div class="btn-group format-selection">
+                        <a class="btn btn-primary js-tooltip" href="#" rel="nofollow" data-original-title="Make a GET request on the Pages Instance resource">GET</a>
+
+                        <button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" data-original-title="Specify a format for the GET request">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            
+                                <li>
+                                    <a class="js-tooltip format-option" href="#" rel="nofollow" data-original-title="Make a GET request on the Pages Instance resource with the format set to `json`">json</a>
+                                </li>
+                            
+                                <li>
+                                    <a class="js-tooltip format-option" href="#" rel="nofollow" data-original-title="Make a GET request on the Pages Instance resource with the format set to `api`">api</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+
+                </fieldset>
+            </form>
+        
+
+        
+            <form class="button-form" action="#">
+                <input type="hidden" name="#" value="#">
+                <input type="hidden" name="_method" value="OPTIONS">
+                <button class="btn btn-primary js-tooltip" data-original-title="Make an OPTIONS request on the Pages Instance resource">OPTIONS</button>
+            </form>
+        
+
+        
+
+        <div class="content-main">
+            <div class="page-header"><h1>Pages Instance</h1></div>
+            
+            <div class="request-info" style="clear: both">
+                <pre class="prettyprint"><b><span class="pln">GET</span></b><span class="pln"> </span><span class="pun">/</span><span class="pln">api</span><span class="pun">/</span><span class="pln">pages</span><span class="pun">/</span><span class="lit">1</span><span class="pun">/</span></pre>
+            </div>
+            <div class="response-info">
+                <pre class="prettyprint"><div class="meta nocode"><b>HTTP 200 OK</b>
+<b>Allow:</b> <span class="lit">GET, HEAD, OPTIONS</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+<b>Content-Type:</b> <span class="lit">text/html; charset=utf-8</span>
+
+</div><span class="pun">{</span><span class="pln">
+    </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> 
+    </span><span class="str">"title"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"About"</span><span class="pun">,</span><span class="pln"> 
+    </span><span class="str">"slug"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"about"</span><span class="pun">,</span><span class="pln"> 
+    </span><span class="str">"content"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&lt;hr /&gt;&lt;b&gt;&lt;span style=\"text-decoration: underline;\"&gt;What is the project?&lt;/span&gt;&lt;/b&gt;\r\n&lt;p&gt;&lt;span style=\"line-height: 1.5em;\"&gt;Spending Stories is a project by the Open Knowledge Foundation aiming at improving fiscal literacy and providing greater awareness of budget data worldwide. &lt;/span&gt;&lt;a href=\"http://blog.okfn.org/category/okf-projects/spending-stories/\" target=\"_self\"&gt;Read more about it on this blog&lt;/a&gt;&lt;span style=\"line-height: 1.5em;\"&gt;. It is supported by &lt;/span&gt;&lt;a href=\"http://www.knightfoundation.org/grants/20110941/\" target=\"_self\"&gt;a grant by the Knight Foundation&lt;/a&gt;&lt;span style=\"line-height: 1.5em;\"&gt;.&lt;br&gt;\r\n&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;span style=\"line-height: 1.5em;\"&gt;This part of the Spending Stories project enables users to put amounts into perspective. Any amount in any currency can be queried and compared against real-life expenditures. The results take into account inflation in the country where the expenditure has been realized.&lt;/span&gt;&lt;/p&gt;\r\n&lt;p&gt;&lt;span style=\"line-height: 1.5em;\"&gt;The project is open source and can be installed on your own server for you to insert your own spending stories. &lt;/span&gt;&lt;a href=\"https://github.com/jplusplus/okf-spending-stories\" target=\"_self\"&gt;Find more instructions at Github&lt;/a&gt;&lt;span style=\"line-height: 1.5em;\"&gt;.&lt;br&gt;\r\n\r\n&lt;/span&gt;&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;b&gt;&lt;span style=\"text-decoration: underline;\"&gt;Who is the team?&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;a href=\"http://okfn.org/\" target=\"_blank\"&gt;The Open Knowledge foundation&lt;/a&gt; asked Paris and Berlin-based agency &lt;a href=\"http://paris.jplusplus.org\" target=\"_self\"&gt;Journalism++ SAS&lt;/a&gt;&amp;nbsp;  to build this app. It was managed by &lt;a href=\"https://twitter.com/annelisebouyer\" target=\"_self\"&gt;@annelisebouyer&lt;/a&gt;  and coded by &lt;a href=\"https://twitter.com/toutenrab\" target=\"_self\"&gt;@toutenrab&lt;/a&gt;, &lt;a href=\"https://twitter.com/vied12\" target=\"_self\"&gt;@vied12&lt;/a&gt;, &lt;a href=\"https://twitter.com/paulloz\" target=\"_self\"&gt;@paulloz&lt;/a&gt;  and &lt;a href=\"https://twitter.com/pirhoo\" </span><a href="mailto:target=\%22_self\%22%3E@pirhoo%3C/a%3E.%3Cbr%3E\r\n\r\n%3C/p%3E\r\n"><span class="str">target=\"_self\"&gt;@pirhoo&lt;/a&gt;.&lt;br&gt;\r\n\r\n&lt;/p&gt;\r\n</span></a><span class="str">"</span><span class="pln">
+</span><span class="pun">}</span></pre>
+            </div>
+        </div>
+
+            
+
+                
+
+                
+            
+
+        </div>
+        <!-- END content-main -->
+
+    </div>
+    <!-- END Content -->
+
+        <div id="push"></div>
+
+    
+
+    <!-- ./wrapper -->
+
+    
+    <!--<div id="footer">
+        <a class="powered-by" href='http://django-rest-framework.org'>Django REST framework</a>
+    </div>-->
+    
+
+    
+    <script src="./1_files/jquery-1.8.1-min.js"></script>
+    <script src="./1_files/bootstrap.min.js"></script>
+    <script src="./1_files/prettify-min.js"></script>
+    <script src="./1_files/default.js"></script>
+    
+  
+
+</body></html>

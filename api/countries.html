@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="robots" content="NONE,NOARCHIVE">
+        
+
+        <title>Spending Stories</title>    
+            <link rel="stylesheet" type="text/css" href="./api_countries_files/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="./api_countries_files/bootstrap-tweaks.css">
+        
+        <link rel="stylesheet" type="text/css" href="./api_countries_files/prettify.css">
+        <link rel="stylesheet" type="text/css" href="./api_countries_files/default.css">
+        
+
+    
+    </head>
+
+  <body class="container vsc-initialized">
+
+    <div class="wrapper">
+
+    
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <span href="/">
+                    <a class="brand" href="./">OKF - Spending Stories <span class="date" style="font-size:0.6em">summer 2013</span></a>
+                </span>
+                <ul class="nav pull-right">
+                    
+                        
+                            <li><a href="#">Log in</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <ul class="breadcrumb">
+        
+            <li>
+                <a href="./index.html">Api Root</a> <span class="divider">›</span>
+            </li>
+        
+            <li>
+                <a href="./countries.html" class="active">Country List</a> 
+            </li>
+        
+    </ul>
+    
+
+    <!-- Content -->
+    <div id="content">        <form id="get-form" class="pull-right">
+                <fieldset>
+                    <div class="btn-group format-selection">
+                        <a class="btn btn-primary js-tooltip" href="#" rel="nofollow" data-original-title="Make a GET request on the Country List resource">GET</a>
+
+                        <button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" data-original-title="Specify a format for the GET request">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            
+                                <li>
+                                    <a class="js-tooltip format-option" href="#" rel="nofollow" data-original-title="Make a GET request on the Country List resource with the format set to `json`">json</a>
+                                </li>
+                            
+                                <li>
+                                    <a class="js-tooltip format-option" href="#" rel="nofollow" data-original-title="Make a GET request on the Country List resource with the format set to `api`">api</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+
+                </fieldset>
+            </form>
+                <form class="button-form" action="#">
+                <input type="hidden" name="#" value="#">
+                <input type="hidden" name="_method" value="OPTIONS">
+                <button class="btn btn-primary js-tooltip" data-original-title="Make an OPTIONS request on the Country List resource">OPTIONS</button>
+            </form>
+        
+
+        
+
+        <div class="content-main">
+            <div class="page-header"><h1>Country List</h1></div>
+            
+            <div class="request-info" style="clear: both">
+                <pre class="prettyprint"><b><span class="pln">GET</span></b><span class="pln"> </span><span class="pun">/</span><span class="pln">api</span><span class="pun">/</span><span class="pln">countries</span><span class="pun">/</span></pre>
+            </div>
+            <div class="response-info">
+                <pre class="prettyprint"><div class="meta nocode"><b>HTTP 200 OK</b>
+<b>Allow:</b> <span class="lit">GET, HEAD, OPTIONS</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+<b>Content-Type:</b> <span class="lit">text/html; charset=utf-8</span>
+
+</div><span class="pun">[</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AFG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Afghanistan (AFG)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ALB"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Albania (ALB)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DZA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Algeria (DZA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AGO"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Angola (AGO)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ATG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Antigua and Barbuda (ATG)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ARG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Argentina (ARG)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ARM"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Armenia (ARM)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ABW"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Aruba (ABW)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AUS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Australia (AUS)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AUT"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Austria (AUT)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AZE"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Azerbaijan (AZE)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BHS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bahamas (BHS)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BHR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bahrain (BHR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BGD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bangladesh (BGD)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BRB"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Barbados (BRB)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BLR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Belarus (BLR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BEL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Belgium (BEL)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BLZ"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Belize (BLZ)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BEN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Benin (BEN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BTN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bhutan (BTN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BOL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bolivia (BOL)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BIH"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bosnia and Herzegovina (BIH)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BWA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Botswana (BWA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BRA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Brazil (BRA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BRN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Brunei Darussalam (BRN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BGR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bulgaria (BGR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BFA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Burkina Faso (BFA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BDI"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Burundi (BDI)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KHM"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Cambodia (KHM)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CMR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Cameroon (CMR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CAN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Canada (CAN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CPV"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Cape Verde (CPV)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CAF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Central African Republic (CAF)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TCD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Chad (TCD)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CHL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Chile (CHL)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CHN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"China (CHN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"HKG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"China - Hong Kong (HKG)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MAC"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"China - Macao (MAC)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"COL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Colombia (COL)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"COM"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Comoros (COM)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"COG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Congo (COG)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CRI"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Costa Rica (CRI)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CIV"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Cote d'Ivoire (CIV)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"HRV"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Croatia (HRV)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CYP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Cyprus (CYP)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CZE"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Czech Republic (CZE)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DNK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Denmark (DNK)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DJI"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Djibouti (DJI)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DMA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Dominica (DMA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DOM"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Dominican Republic (DOM)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ECU"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Ecuador (ECU)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"EGY"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Egypt (EGY)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SLV"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"El Salvador (SLV)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GNQ"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Equatorial Guinea (GNQ)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"EST"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Estonia (EST)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ETH"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Ethiopia (ETH)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FJI"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Fiji (FJI)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FIN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Finland (FIN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FRA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"France (FRA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GAB"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Gabon (GAB)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GMB"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Gambia (GMB)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GEO"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Georgia (GEO)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DEU"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Germany (DEU)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GHA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Ghana (GHA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GRC"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Greece (GRC)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GRD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Grenada (GRD)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GTM"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Guatemala (GTM)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GIN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Guinea (GIN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GNB"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Guinea-Bissau (GNB)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GUY"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Guyana (GUY)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"HTI"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Haiti (HTI)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"HND"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Honduras (HND)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"HUN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Hungary (HUN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ISL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Iceland (ISL)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"IND"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"India (IND)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"IDN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Indonesia (IDN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"IRN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Iran (IRN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"IRQ"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Iraq (IRQ)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"IRL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Ireland (IRL)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ISR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Israel (ISR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ITA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Italy (ITA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"JAM"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Jamaica (JAM)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"JPN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Japan (JPN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"JOR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Jordan (JOR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KAZ"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Kazakhstan (KAZ)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KEN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Kenya (KEN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KWT"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Kuwait (KWT)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KGZ"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Kyrgyzstan (KGZ)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LAO"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Lao People's Democratic Republic (LAO)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LVA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Latvia (LVA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LBN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Lebanon (LBN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LSO"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Lesotho (LSO)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LBR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Liberia (LBR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LBY"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Libyan Arab Jamahiriya (LBY)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LTU"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Lithuania (LTU)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LUX"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Luxembourg (LUX)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MKD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Macedonia (MKD)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MDG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Madagascar (MDG)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MWI"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Malawi (MWI)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MYS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Malaysia (MYS)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MDV"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Maldives (MDV)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MLI"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mali (MLI)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MLT"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Malta (MLT)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MRT"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mauritania (MRT)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MUS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mauritius (MUS)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MEX"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mexico (MEX)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MNG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mongolia (MNG)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MNE"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Montenegro (MNE)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MAR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Morocco (MAR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MOZ"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mozambique (MOZ)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MMR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Myanmar (MMR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NAM"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Namibia (NAM)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NPL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Nepal (NPL)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NLD"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Netherlands (NLD)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NZL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"New Zealand (NZL)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NIC"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Nicaragua (NIC)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NER"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Niger (NER)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NGA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Nigeria (NGA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"NOR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Norway (NOR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PSE"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Occupied Palestinian Territory (PSE)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"OMN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Oman (OMN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PAK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Pakistan (PAK)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PAN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Panama (PAN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PNG"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Papua New Guinea (PNG)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PRY"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Paraguay (PRY)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PER"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Peru (PER)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PHL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Philippines (PHL)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"POL"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Poland (POL)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PRT"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Portugal (PRT)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"QAT"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Qatar (QAT)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KOR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Republic of Korea (KOR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"MDA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Republic of Moldova (MDA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ROU"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Romania (ROU)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"RUS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Russian Federation (RUS)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"RWA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Rwanda (RWA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"KNA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Saint Kitts and Nevis (KNA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LCA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Saint Lucia (LCA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"VCT"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Saint Vincent and the Grenadines (VCT)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"WSM"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Samoa (WSM)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SMR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"San Marino (SMR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"STP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Sao Tome and Principe (STP)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SAU"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Saudi Arabia (SAU)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SEN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Senegal (SEN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SRB"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Serbia (SRB)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SYC"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Seychelles (SYC)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SLE"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Sierra Leone (SLE)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SGP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Singapore (SGP)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SVK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Slovakia (SVK)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SVN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Slovenia (SVN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SLB"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Solomon Islands (SLB)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ZAF"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"South Africa (ZAF)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ESP"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Spain (ESP)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LKA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Sri Lanka (LKA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SDN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Sudan (SDN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SUR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Suriname (SUR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SWZ"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Swaziland (SWZ)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SWE"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Sweden (SWE)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CHE"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Switzerland (CHE)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SYR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Syrian Arab Republic (SYR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TJK"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Tajikistan (TJK)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"THA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Thailand (THA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TLS"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Timor-Leste (TLS)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TGO"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Togo (TGO)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TON"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Tonga (TON)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TTO"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Trinidad and Tobago (TTO)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TUN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Tunisia (TUN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TUR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Turkey (TUR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"UGA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Uganda (UGA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"UKR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Ukraine (UKR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ARE"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"United Arab Emirates (ARE)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"GBR"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"United Kingdom (GBR)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TZA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"United Republic of Tanzania (TZA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"USA"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"United States of America (USA)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"URY"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Uruguay (URY)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"VUT"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Vanuatu (VUT)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"VEN"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Venezuela (Bolivarian Republic of) (VEN)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"VNM"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Viet Nam (VNM)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"YEM"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Yemen (YEM)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ZMB"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Zambia (ZMB)"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln"> 
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"iso_code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ZWE"</span><span class="pun">,</span><span class="pln"> 
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Zimbabwe (ZWE)"</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">]</span></pre>
+            </div>
+        </div>
+
+            
+
+                
+
+                
+            
+
+        </div>
+        <!-- END content-main -->
+
+    </div>
+    <!-- END Content -->
+
+        <div id="push"></div>
+
+    
+
+    <!-- ./wrapper -->
+
+    
+    <!--<div id="footer">
+        <a class="powered-by" href='http://django-rest-framework.org'>Django REST framework</a>
+    </div>-->
+    
+
+    
+    <script src="./api_countries_files/jquery-1.8.1-min.js"></script>
+    <script src="./api_countries_files/bootstrap.min.js"></script>
+    <script src="./api_countries_files/prettify-min.js"></script>
+    <script src="./api_countries_files/default.js"></script>
+    
+  
+
+</body></html>
